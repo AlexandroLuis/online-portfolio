@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -22,7 +21,6 @@
 </head>
 
 <body>
-
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -32,7 +30,7 @@
 
       <div class="profile">
         <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Alexandro Rocha</a></h1>
+        <h1 class="text-light"><a href="index.html"><span translate="no">Alexandro Rocha</span></a></h1>
         <div class="social-links mt-3 text-center">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/AlexandroLuis" class="twitter"><i class="bx bxl-github"></i></a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexandro-rocha-184140190/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -42,7 +40,7 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span translate="no">Curriculum</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
@@ -51,17 +49,17 @@
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Hello, my name is Alexandro. I'm creative and proactive, expert in
+          <p>Hello, my name is <span translate="no"> Alexandro</span>. I'm creative and proactive, expert in
             data analysis and engineering. Ambitious and looking forward to
             continue to grow and evolve in my profession. Constantly developing
-            new skills. I am extremely analytical.</p>
+            new skills. I am extremely analytical.
+          </p>
         </div>
 
         <div class="row">
@@ -197,7 +195,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2><span translate="no">Curriculum</span></h2>
         </div>
 
         <div class="row">
@@ -231,7 +229,7 @@
             </div>
             <h3 class="resume-title">Awards</h3>
             <div class="resume-item pb-0">
-              <h4><em>International Collegiate Programming Contest (ICPC)</em></h4>
+              <h4><em><span translate="no">International Collegiate Programming Contest (ICPC)</span></em></h4>
               <p><em>Honorable Mention in 2020 & 2021 </em></p>
               <p><em>Certificate of Achievement in 2020 & 2021 </em></p>
             </div>
@@ -411,6 +409,24 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <div id="google_translate_element" style="display:none;"></div>
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages:'pt'
+    }, 'google_translate_element');
+    setTimeout(function(){
+      var select = document.querySelector('select.goog-te-combo');
+      select.value    = "pt"; 
+      select.dispatchEvent(new Event('change'));         
+    },1000)
+    setTimeout(function(){
+      document.querySelector('[id=":1.container"]').remove()
+    },2000)
+  }
+  </script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
